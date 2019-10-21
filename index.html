@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
   <header class="page-header">
+    <a class="page-header__logo"><img src="img/sedona-logo.png" width="140" height="71" alt="Sedona"></a>
     <nav class="main-menu">
-      <ul class="main-menu__list">
-        <li class="main-menu__item"><a class="main-menu__link"><img class="main-menu__logo" width="140" height="72"
-              src="img/sedona-logo.png" alt="Седона"></a></li>
+      <ul class="main-menu__list list-formatter">
         <li class="main-menu__item"><a class="main-menu__link" href="#">Информация</a></li>
         <li class="main-menu__item"><a class="main-menu__link" href="#">Фото и видео</a></li>
         <li class="main-menu__item"><a class="main-menu__link" href="#">Карта штата</a></li>
@@ -32,12 +32,14 @@
       <p class="features__titled-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="features__second-titled-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <div class="features__item features__item--big">
-        <h3 class="features__title">Настоящий городок</h3>
-        <p class="features__text">— №1 —</p>
-        <p class="features__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        <img class="features__img" src="img/Layer 1.jpg" width="800" height="256" alt="Вид Седоны">
+        <div class="features__description-card">
+          <h3 class="features__title">Настоящий городок</h3>
+          <p class="features__number">№1</p>
+          <p class="features__description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <img class="features__img" src="img/Layer 2.jpg" width="800" height="256" alt="Вид Седоны">
       </div>
-      <ul class="features__list">
+      <ul class="features__list features__list--with-icons  list-formatter">
         <li class="features__item--small">
           <h3 class="features__title">Жильё</h3>
           <p class="features__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -51,28 +53,30 @@
           <p class="features__text">Не только китайского, но и местного производства!</p>
         </li>
       </ul>
-      <div class="feature__item fiature__item--big">
-        <h3 class="features__title">Там есть Мост дьявола</h3>
-        <p class="features__text">— №2 —</p>
-        <p class="features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        <img class="features__img" src="img/Layer 2.jpg" width="800" height="256" alt="Вид yа каньон">
+      <div class="features__item features__item--big">
+        <div class="features__description-card">
+          <h3 class="features__title">Там есть Мост дьявола</h3>
+          <p class="features__number">№2</p>
+          <p class="features__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+        <img class="features__img" src="img/Layer 1.jpg" width="800" height="256" alt="Вид yа каньон">
       </div>
-      <ul class="features__list">
+      <ul class="features__list features__list--small list-formatter">
         <li class="features__item--small">
           <h3 class="features__title">Небольшая площадь</h3>
-          <p class="features__text">— №3 —</p>
+          <p class="features__text">№3</p>
           <p class="features__text">Все достопримечательности
             находятся очень близко</p>
         </li>
         <li class="features__item--small">
           <h3 class="features__title">Красивая дорога</h3>
-          <p class="features__text">— №4 —</p>
+          <p class="features__text">№4</p>
           <p class="features__text">Ехать в Седону из Лас-Вегаса совсем
             не скучно!</p>
         </li>
         <li class="features__item--small">
           <h3 class="features__title">Мало туристов</h3>
-          <p class="features__text"> — №5 —</p>
+          <p class="features__text">№5</p>
           <p class="features__text">Большинство едет в Гранд Каньон
             и толпится там</p>
         </li>
@@ -95,9 +99,10 @@
 
   <footer class="page-footer">
     <p class="page-footer__hashtag">#visitsedona</p>
-    <ul class="page-footer__social-list">
+    <ul class="page-footer__social-list list-formatter">
       <li class="page-footer__social-item"><a class="page-footer__social-link" href="#" aria-label="tweeter"></a></li>
-      <li class="page-footer__social-item"><a class="page-footer__social-link" href="#" aria-label="facebook"></a></li>
+      <li class="page-footer__social-item"><a class="page-footer__social-link" href="#" aria-label="facebook"></a>
+      </li>
       <li class="page-footer__social-item"><a class="page-footer__social-link" href="#" aria-label="youtube"></a></li>
     </ul>
     <p class="page-footer__dev">Website by <a href="#"><img src="img/htmlacademy-logo.svg" width="115" height="41"
@@ -127,7 +132,6 @@
       <button class="btn modal-window__btn" type="submit">Найти</button>
     </form>
   </section>
-
 </body>
 
 </html>
