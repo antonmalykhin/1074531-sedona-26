@@ -104,16 +104,30 @@
     </section>
     <section class="sorting">
       <h2 class="visually-hidden">Сортировка</h2>
-      <p>Найдено:3</p>
-      <p>сортировка:</p>
-      <ul class="list-formatter">
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По рейтингу</a></li>
+      <p class="searching-result">Найдено:3</p>
+      <p class="sorting__title">сортировка:</p>
+      <ul class="sorting__list sorting__type list-formatter">
+        <li class="sorting__item"><a class="sorting__link active" href="#">По цене</a></li>
+        <li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
+        <li class="sorting__item"><a class="sorting__link" href="#">По рейтингу</a></li>
       </ul>
-      <ul class="list-formatter">
-        <li><a href="#">По возрастанию</a></li>
-        <li><a href="#">По убыванию</a></li>
+      <ul class="sorting__list sorting__direction list-formatter">
+        <li class="sorting__item"><a class="sorting__link sorting__link--up" href="#" aria-label="По возрастанию">
+            <svg class="arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10"
+              enable-background="new 0 0 11 10" xml:space="preserve">
+              <polyline fill="#231F20" points="5.5,10 0,0 11,0 " />
+            </svg>
+          </a>
+        </li>
+        <li class="sorting__item"><a class="sorting__link sorting__link--down active" href="#" aria-label="По убыванию">
+            <svg class="arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10"
+              enable-background="new 0 0 11 10" xml:space="preserve">
+              <polyline fill="#231F20" points="5.5,10 0,0 11,0 " />
+            </svg>
+          </a>
+        </li>
       </ul>
     </section>
     <section class="hotels">
@@ -121,33 +135,51 @@
       <ul class="hotels__list list-formatter">
         <li class="hotels__item">
           <img class="hotels__img" src="img/Layer 3.jpg" width="135" height="90" alt="Amara Resort & Spa">
-          <h3 class="hotels__title">Amara Resort & Spa</h3>
-          <p class="hotels__type">Гостиница</p>
-          <p class="hotel__price">От 4000 Р.</p>
-          <a class="btn hotels__btn hotels__btn--details" href="#">Подробнее</a>
-          <a class="btn hotels__btn hotels__btn--to-book" href="#">Забронировать</a>
-          <div class="hotels__stars"></div>
-          <p class="hotels__rating">Рейтинг: 8,5</p>
+          <div class="hotels__description">
+            <h3 class="hotels__title">Amara Resort & Spa</h3>
+            <p class="hotels__type">Гостиница</p>
+            <p class="hotel__price">От 4000 Р.</p>
+            <div class="hotels__btns"> <a class="btn hotels__btn hotels__btn--details" href="#">Подробнее</a>
+              <a class="btn hotels__btn hotels__btn--to-book" href="#">Забронировать</a></div>
+
+          </div>
+          <div class="hotels__rating">
+            <div class="hotels__stars"></div>
+            <p class="hotels__text">Рейтинг: 8,5</p>
+          </div>
         </li>
+
         <li class="hotels__item">
           <img class="hotels__img" src="img/Layer 4.jpg" width="135" height="90" alt="Desert Quail Inn">
-          <h3 class="hotels__title">Desert Quail Inn</h3>
-          <p class="hotels__type">Мотель</p>
-          <p class="hotel__price">От 3000 Р.</p>
-          <a class="btn hotels__btn hotels__btn--details" href="#">Подробнее</a>
-          <a class="btn hotels__btn hotels__btn--to-book" href="#">Забронировать</a>
-          <div class="hotels__stars"></div>
-          <p class="hotels__rating">Рейтинг: 8,9</p>
+          <div class="hotels__description">
+            <h3 class="hotels__title">Desert Quail Inn</h3>
+            <p class="hotels__type">Мотель</p>
+            <p class="hotel__price">От 3000 Р.</p>
+            <div class="hotels__btns"> <a class="btn hotels__btn hotels__btn--details" href="#">Подробнее</a>
+              <a class="btn hotels__btn hotels__btn--to-book" href="#">Забронировать</a></div>
+
+          </div>
+          <div class="hotels__rating">
+            <div class="hotels__stars"></div>
+            <p class="hotels__text">Рейтинг: 8,9</p>
+          </div>
+
         </li>
+
         <li class="hotels__item">
-          <img class="hotels__img" src="img/Layer 5.jpg" width="135" height="90" alt="Desert Quail Inn">
-          <h3 class="hotels__title">Villas at Poco Diablo</h3>
-          <p class="hotels__type">Апартаменты</p>
-          <p class="hotel__price">От 2000 Р.</p>
-          <a class="btn hotels__btn hotels__btn--details" href="#">Подробнее</a>
-          <a class="btn hotels__btn hotels__btn--to-book" href="#">Забронировать</a>
-          <div class="hotels__stars"></div>
-          <p class="hotels__rating">Рейтинг: 9,2</p>
+          <img class="hotels__img" src="img/Layer 5.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+          <div class="hotels__description">
+            <h3 class="hotels__title">Villas at Poco Diablo</h3>
+            <p class="hotels__type">Апартаменты</p>
+            <p class="hotel__price">От 2000 Р.</p>
+            <div class="hotels__btns"> <a class="btn hotels__btn hotels__btn--details" href="#">Подробнее</a>
+              <a class="btn hotels__btn hotels__btn--to-book" href="#">Забронировать</a></div>
+
+          </div>
+          <div class="hotels__rating">
+            <div class="hotels__stars"></div>
+            <p class="hotels__text">Рейтинг: 9,2</p>
+          </div>
         </li>
       </ul>
     </section>
